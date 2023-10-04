@@ -14,6 +14,7 @@ public class HttpRemoteCaller {
             "http://localhost:4569",
             "http://localhost:4570"
     };
+    private static final String URL = "";
     private static int currentServer = 0;
 
     public static String remoteLogCall(String message) throws IOException {

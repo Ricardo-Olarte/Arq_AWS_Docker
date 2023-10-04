@@ -17,7 +17,7 @@ public class LogService {
         if (System.getenv("PORT") != null) {
             return Integer.parseInt(System.getenv("PORT"));
         }
-        return 4568;
+        return 15000;
     }
 
     private static String logMessage(String string){
