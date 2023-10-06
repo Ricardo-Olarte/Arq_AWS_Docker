@@ -3,25 +3,25 @@ version: '2'
 
 services:
     web_round_robin:
-        image: ricardo-olarte/log_round_robin
+        image: richi99/log_round_robin
         container_name: roundrobbinserver
         ports:
-            - "34000:24000"
+            - "35000:24000"
     web_log_service1:
-        image: ricardo-olarte/log_service
+        image: richi99/log_service
         container_name: log_service1
         ports:
-            - "35000:15000"
+            - "35001:15000"
     web_log_service2:
-        image: ricardo-olarte/log_service
+        image: richi99/log_service
         container_name: log_service2
         ports:
-            - "35001:15000"
+            - "35002:15000"
     web_log_service3:
-        image: ricardo-olarte/log_service
+        image: richi99/log_service
         container_name: log_service3
         ports:
-            - "35002:15000"
+            - "35003:15000"
     db:
         image: mongo:3.6.1
         container_name: db
