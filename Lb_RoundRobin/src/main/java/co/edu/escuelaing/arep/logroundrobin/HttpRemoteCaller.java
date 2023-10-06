@@ -6,6 +6,10 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+/**
+ * @author Luis Benavides, Modify by
+ * @author Ricardo Olarte
+ */
 public class HttpRemoteCaller {
 
     private static final String USER_AGENT = "Mozilla/5.0";

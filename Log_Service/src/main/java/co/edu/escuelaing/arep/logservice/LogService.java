@@ -1,7 +1,13 @@
 package co.edu.escuelaing.arep.logservice;
 
+import java.util.List;
+
 import static spark.Spark.*;
 
+/**
+ * @author Luis Benavides, Modify by
+ * @author Ricardo Olarte
+ */
 public class LogService {
 
     public static void main(String[] args) {
@@ -29,4 +35,6 @@ public class LogService {
                     }
                """;
     }
+
+    private static List
 }
