@@ -12,7 +12,20 @@ __________________________________________________________________
 - IDE (Visual, Netbeans, Intellij, entre otros)
 - Git
 - Browser
+__________________________________________________________________
 
+# Conceptos
+
+### Log Service
+Es un servicio que recopila y almacena registros de actividad. Los registros de actividad son una fuente valiosa de información para el diagnóstico de problemas, el análisis de tendencias y la supervisión del rendimiento.
+
+### Log Round Robin
+
+Es un método de distribución de tráfico que distribuye el tráfico de manera uniforme entre un conjunto de servidores. En el contexto de los servicios de registro, log round robin se puede utilizar para distribuir el tráfico de registro entre un conjunto de servidores de registro.
+
+### MongoDB
+
+Es una base de datos escalable, lo que significa que puede crecer para adaptarse a las necesidades de su aplicación. También es una base de datos flexible, lo que significa que puede adaptarse a una variedad de aplicaciones.
 __________________________________________________________________
 
 ## Instalación
@@ -77,6 +90,12 @@ __________________________________________________________________
 - AWS, sus instancias respectivas
   
 ![](https://github.com/Ricardo-Olarte/TOOLS/blob/main/taller6/aws.png)
+__________________________________________________________________
+# Bibliografías
+
+- [MongoDB](https://www.mongodb.com/)
+- [Log round robin](https://www.etsy.com/market/log_rounds)
+- [Log Service](https://www.tek-tools.com/apm/what-is-laas)
 __________________________________________________________________
 
 ## Autor
