@@ -62,6 +62,12 @@ docker run -d -p 27017:27017 -v mongodb:/data/db -v mongodb_config:/data/configd
 __________________________________________________________________
 # Explicación
 
+Apartir de la siguiente arquitectura
+![](https://github.com/Ricardo-Olarte/TOOLS/blob/main/taller6/arq.png)
+
+Se maneja AWS como virtualizador en la nube, e instaciamos en este caso EC2. A su vez, como contenedor utilizamos Docker, y este es instalado en nuestra máquina virtual EC2.
+Por medio de imágenes, en la cual estas contienen containers, se realizó logs service, log round robin, y todo esto instanciando un servicio de MongoDB.
+
 __________________________________________________________________
 # Herramientas Utilizadas
 
