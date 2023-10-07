@@ -75,7 +75,14 @@
       <artifactId>mongodb-driver-async</artifactId>
       <version>3.12.10</version>
     </dependency>
+
+    <dependency>
+      <groupId>org.json</groupId>
+      <artifactId>json</artifactId>
+      <version>20230618</version>
+    </dependency>
   </dependencies>
+
   <!-- build configuration -->
   <build>
     <plugins>
