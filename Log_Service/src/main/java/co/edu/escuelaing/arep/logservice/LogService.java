@@ -32,6 +32,11 @@ public class LogService {
 
     }
 
+    /**
+     * Create one port, this port it's phisical
+     * Singleton Pattern
+     * @return numero entero, indica el puerto
+     */
     private static int getPort(){
         if (System.getenv("PORT") != null) {
             return Integer.parseInt(System.getenv("PORT"));
@@ -39,18 +44,29 @@ public class LogService {
         return 15000;
     }
 
+    /**
+     *
+     * @param string
+     * @return
+     */
     private static String logMessage(String string){
         return """
                 {
-                    "m1" : "mensaje1"
-                    "m2" : "mensaje2"
-                    "m3" : "mensaje3"
+                    "m1" : "message1"
+                    "m2" : "message2"
+                    "m3" : "message3"
                 }
                 """;
 
     }
 
     //Con ayuda de Juan Sebastian Rodriguez
+
+    /**
+     * Try conection wit Mongo and create a Client
+     * @param string
+     * @return List of the document to see which messages take it
+     */
     private static List<Document> connectionMongo(String string){
         String uriDB = "mongodb://mongodb:27017";
 
@@ -70,7 +86,10 @@ public class LogService {
         return documents;
     }
 
-
+    /**
+     * Save value on Mongo
+     * @param string
+     */
     private static void saveValue(String string){
         MongoClient mongoClient = MongoClients.create("mongodb://mongodb:27017");
         MongoDatabase database = mongoClient.getDatabase("arep-mongoDB");
