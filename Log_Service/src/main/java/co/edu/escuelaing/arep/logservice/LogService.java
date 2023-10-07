@@ -40,9 +40,17 @@ public class LogService {
     }
 
     private static String logMessage(String string){
-        return string;
+        return """
+                {
+                    "m1" : "mensaje1"
+                    "m2" : "mensaje2"
+                    "m3" : "mensaje3"
+                }
+                """;
+
     }
 
+    //Con ayuda de Juan Sebastian Rodriguez
     private static List<Document> connectionMongo(String string){
         String uriDB = "mongodb://mongodb:27017";
 
@@ -74,5 +82,4 @@ public class LogService {
         collection.insertOne(document);
         mongoClient.close();
     }
-
 }
