@@ -4,7 +4,7 @@ version: '2'
 services:
     web_round_robin:
         image: richi99/log_round_robin
-        container_name: roundrobbinserver
+        container_name: roundrobbin
         ports:
             - "35000:24000"
     web_log_service1:
