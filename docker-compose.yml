@@ -24,7 +24,7 @@ services:
             - "35003:15000"
     db:
         image: mongo:3.6.1
-        container_name: db
+        container_name: mongodb
         volumes:
             - mongodb:/data/db
             - mongodb_config:/data/configdb

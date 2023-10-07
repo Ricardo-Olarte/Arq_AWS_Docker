@@ -56,7 +56,7 @@ public class LogService {
 
         MongoClient mongoClient = MongoClients.create(uriDB);
         MongoDatabase database = mongoClient.getDatabase("arep-mongoDB");
-        MongoCollection<Document> collection = database.getCollection("message");
+        MongoCollection<Document> collection = database.getCollection("logs");
         List<Document> documents = new ArrayList<>();
         try(MongoCursor<Document> mongoCursor = collection.find().limit(10).sort(Sorts.descending("date")).iterator()){
             while (mongoCursor.hasNext()){
